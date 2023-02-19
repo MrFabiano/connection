@@ -3,6 +3,7 @@ package com.redis.connection.repository;
 import com.redis.connection.enums.Gender;
 import com.redis.connection.model.Student;
 import com.redis.connection.model.StudentDAO;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 @Component
+@Slf4j
 public class RedisOpertionsRunner implements CommandLineRunner {
 
     @Autowired
